@@ -1,0 +1,7 @@
+FROM python
+
+RUN pip3 install -r requirements.txt
+
+COPY wordle.py
+
+CMD ["python3", "wordle.py"]
